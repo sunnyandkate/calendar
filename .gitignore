@@ -1,0 +1,17 @@
+# 📦 Compiled Java build outputs
+/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# ☕ Eclipse IDE metadata configurations
+.settings/
+.project
+.classpath
+.factorypath
+bin/
+
+# 🛠️ Local environment properties overrides
+.env
+.DS_Store

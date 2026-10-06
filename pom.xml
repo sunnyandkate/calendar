@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<!-- 🎯 Perfectly aligned with your Game Explorer core engine -->
+		<version>4.1.1</version>
+		<relativePath/> 
+	</parent>
+	
+	<groupId>com.birthday.calendar</groupId>
+	<artifactId>calendar</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>birthday-calendar</name>
+	<description>Advanced Birthday Countdown Calendar with Time Travel Mode</description>
+
+	<properties>
+		<!-- Native high-performance Java 26 compilation parameters -->
+		<java.version>26</java.version>
+	</properties>
+
+	<dependencies>
+		<!-- JPA/Hibernate Dependency to handle database object mappings -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		
+		<!-- Web/MVC Dependency for building your REST API endpoints -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webmvc</artifactId>
+		</dependency>
+
+		<!-- Official Managed MySQL/MariaDB Driver Details -->
+		<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- Testing Framework Dependencies -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webmvc-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<!-- Explicitly names  compiled file app.jar so Dockerfile script relocates it smoothly -->
+		<finalName>app</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
