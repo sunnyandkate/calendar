@@ -14,7 +14,10 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/calendar")
 @CrossOrigin(
-	    origins = "${ALLOWED_ORIGIN:http://localhost:5173}", 
+		origins = {
+		        "http://localhost:5173", 
+		        "https://maharaniwebsites.com" 
+		    },
 	    allowedHeaders = "*", 
 	    allowCredentials = "true"
 	) 
