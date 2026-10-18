@@ -16,7 +16,7 @@ import java.util.Optional;
 @CrossOrigin(
 		origins = {
 		        "http://localhost:5173", 
-		        "https://maharaniwebsites.com" 
+		        "https://projects.maharaniwebsites.com" 
 		    },
 	    allowedHeaders = "*", 
 	    allowCredentials = "true"

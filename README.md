@@ -7,7 +7,7 @@ The countdown officially starts on October 22nd. Every day, a new door opens up 
 
 ## The Setup
 * **Code:** Java 26 + Spring Boot 4
-* **Database:** Layerbase (MariaDB)
+* **Database:** MySQL
 * **Hosting:** Render (Runs inside a lightweight Docker container)
 
 ## Cool Features
